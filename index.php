@@ -1,9 +1,4 @@
 <?php
-function my_autoloader($class_name){
-  require_once("controllers/$class_name.php");
-}
-
-spl_autoload_register('my_autoloader');
 
 /*require_once 'controllers/home.php';
 require_once 'controllers/contact.php';
