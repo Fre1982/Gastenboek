@@ -45,3 +45,4 @@ class db
       $stmt = $this->conn->prepare("DELETE FROM ".$table." WHERE id=".$id);
       $stmt->execute();
     }
+}

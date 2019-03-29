@@ -27,7 +27,6 @@ $result = array(array(1,1,"jef@telenet.be","jef","mijn bericht"),array(2,2,"piet
 
         <div class="lg-2 offset-5 text-center">
 
-
           <table><thead>
             <th scope="row"><?php echo "Gast Id"?></th>
             <th scope="row"><?php echo "Email"?></th>
@@ -62,7 +61,7 @@ $result = array(array(1,1,"jef@telenet.be","jef","mijn bericht"),array(2,2,"piet
 
           </table>
           <br>
-          <button type="button" name="Nieuw bericht" onclick="window.location.href = 'users/users.php';">Nieuw bericht</button><br>
+          <a type="button" name="Nieuw bericht" href="index.php?action=addpage"> Nieuw bericht </a><br>
 
 
         </div>
