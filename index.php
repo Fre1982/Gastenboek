@@ -7,7 +7,11 @@ if(isset($_GET['action']) && $_GET['action'] !== ""){
   if($_GET['action'] == 'addpage'){
     $addpageController = new addpageController();
     $addpageController->index();
-  } else {
+  } elseif($_GET['action'] == 'add'){
+    $messageController = new messageController();
+    $messageController->addMessageToDb();
+  }
+  else {
     $errorController = new errorController();
     $errorController->index();
   }

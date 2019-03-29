@@ -5,9 +5,8 @@
 class messageController {
 
   public function addMessageToDb() {
-    if(isset($_POST['naam']) && $_POST['naam'] !== "" &&
-      isset($_POST['email']) && $_POST['email'] !== "" &&
-      isset($_POST['bericht']) && $_POST['bericht'] !== ""){
+    if(isset($_POST['naam']) && $_POST['naam'] !== ""){
+      require 'models/gastenboek.php';
 
       $table = 'berichten';
       $naam = $_POST['naam'];
@@ -16,8 +15,9 @@ class messageController {
 
       $gastenboek = new gastenboek;
       $gastenboek->addData($table, $naam, $email, $bericht);
-      header (Location: '../index.php')
-    }else{header ('Location: '.$_SERVER['HTTP REFERER']);
+      header ('Location: index.php');
+    }else{header ('Location: '.$_SERVER['HTTP_REFERER']);
   }
 
+  }
 }
