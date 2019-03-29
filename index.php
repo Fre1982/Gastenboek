@@ -1,9 +1,6 @@
 <?php
 
-/*require_once 'controllers/home.php';
-require_once 'controllers/contact.php';
-require_once 'controllers/error.php';
-*/
+require_once("core/init.php");
 
 // Dispatching the world
 
