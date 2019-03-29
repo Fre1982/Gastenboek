@@ -37,7 +37,7 @@ class db
 }
 
   public function updateDataById($table, $id, $email, $naam, $bericht){
-      $sql = "UPDATE ".$table." SET email = '".$email."', naam = '".$naam."', bericht = '"$bericht"' WHERE id=".$id;
+      $sql = "UPDATE ".$table." SET email = '".$email."', naam = '".$naam."', bericht = '".$bericht."' WHERE id=".$id;
       $stmt = $this->conn->prepare($sql);
       $stmt->execute();
     }

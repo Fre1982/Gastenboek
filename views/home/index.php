@@ -1,12 +1,3 @@
-<?php
-/*require_once 'db_connect.php';
-$db1 = new db('localhost', 'root', '', 'gastenboek');
-$result = $db1->getAllData();
-//var_dump($result);
-*/
-
-$result = array(array(1,1,"jef@telenet.be","jef","mijn bericht"),array(2,2,"piet@telenet.be","piet","Dit is het dan"),array(3,3,"fre@telenet.be","fre","Jo de mannen"));
- ?>
 
 <!doctype html>
 <html lang="en">
@@ -39,26 +30,16 @@ $result = array(array(1,1,"jef@telenet.be","jef","mijn bericht"),array(2,2,"piet
                       <tr>
 
 
-                          <td><?php echo $key[1]?></td>
-                          <td><?php echo $key[2]?></td>
-                          <td><?php echo $key[3]?></td>
-                          <td><?php echo $key[4]."<br>"?></td>
+                          <td><?php echo $key['id']?></td>
+                          <td><?php echo $key['naam']?></td>
+                          <td><?php echo $key['email']?></td>
+                          <td><?php echo $key['bericht']."<br>"?></td>
 
 
                       </tr>
 
                   <?php endforeach; ?>
                 </tbody>
-
-
-
-
-
-
-
-
-
-
           </table>
           <br>
           <a type="button" name="Nieuw bericht" href="index.php?action=addpage"> Nieuw bericht </a><br>

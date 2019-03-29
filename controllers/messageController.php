@@ -19,4 +19,5 @@ class messageController {
       header (Location: '../index.php')
     }else{header ('Location: '.$_SERVER['HTTP REFERER']);
   }
+
 }
