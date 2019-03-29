@@ -34,6 +34,7 @@ class db
     $result = $stmt->fetchAll();
     $this->numOfRows = sizeof($result);
     return $result;
+}
 
   public function updateDataById($table, $id, $email, $naam, $bericht){
       $sql = "UPDATE ".$table." SET email = '".$email."', naam = '".$naam."', bericht = '"$bericht"' WHERE id=".$id;
