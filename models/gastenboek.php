@@ -10,9 +10,9 @@ class gastenboek extends db
 {
     public $id,$title,$text;
 
-    public function addData($table = null,$naam =null,$bericht=null){
-        $stmt = $this->conn->prepare("INSERT INTO ".$table." (naam, fbericht)
-        VALUES ('".$naam."','".$bericht."')");
+    public function addData($table = null,$naam=null,$email=null, $bericht=null){
+        $stmt = $this->conn->prepare("INSERT INTO ".$table." (naam, email, bericht)
+        VALUES ('".$naam."','".$email."','".$bericht."')");
         $stmt->execute();
     }
     public function deleteDatabyId($table = null,$id = null){

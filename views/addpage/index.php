@@ -1,3 +1,6 @@
+<?php  ?>
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -5,10 +8,12 @@
     <title></title>
   </head>
   <body>
-    <form class="" action="index.html" method="post">
+    <form class="" action="../index.php?action=add" method="post">
       <p>Email: <input type="email" name="email" value=""></p>
       <p>Naam: <input type="text" name="naam" value=""></p>
-      Bericht: <input type="textarea" rows="10" cols="20" name="bericht" value="">
+      Bericht: <textarea name="name" rows="1" cols="80"></textarea>
+      <p><button type="button" name="button">Voeg Toe</button></p>
+
 
     </form>
   </body>

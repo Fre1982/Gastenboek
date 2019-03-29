@@ -2,9 +2,9 @@
 
 class db
 {
-  protected $host, $username, $password, $dbname;
+  private $host, $username, $password, $dbname;
 
-  private $conn;
+  protected $conn;
   public $numOfRows;
 
   public function __construct($host = 'localhost', $username ='root', $password ='', $dbname ='gastenboek')
