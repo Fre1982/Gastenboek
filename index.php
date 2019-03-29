@@ -12,10 +12,10 @@ require_once 'controllers/error.php';
 
 // Dispatching the world
 
-if(isset($_GET['page']) && $_GET['page'] !== ""){
-  if($_GET['page'] == 'contact'){
-    $contactController = new contactController();
-    $contactController->index();
+if(isset($_GET['action']) && $_GET['action'] !== ""){
+  if($_GET['action'] == 'addpage'){
+    $addpageController = new addpageController();
+    $addpageController->index();
   } else {
     $errorController = new errorController();
     $errorController->index();
